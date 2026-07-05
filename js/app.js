@@ -223,4 +223,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
   }
+
+  // --- 7. Modal Image Slider ---
+  function initSlider(sliderId) {
+    const sliderEl = document.getElementById(sliderId);
+    if (!sliderEl) return;
+
+    const images = sliderEl.querySelectorAll('.slider-img');
+    const dotsContainer = document.getElementById('dots-' + sliderId);
+    let current = 0;
+
+    // Build dots
+    images.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    function goTo(index) {
+      images[current].classList.remove('active');
+      dotsContainer.children[current].classList.remove('active');
+      current = (index + images.length) % images.length;
+      images[current].classList.add('active');
+      dotsContainer.children[current].classList.add('active');
+    }
+
+    sliderEl.querySelector('.slider-btn--prev')
+      .addEventListener('click', () => goTo(current - 1));
+    sliderEl.querySelector('.slider-btn--next')
+      .addEventListener('click', () => goTo(current + 1));
+  }
+
+  initSlider('slider-pro-01');
+
 });
