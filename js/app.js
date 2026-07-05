@@ -257,4 +257,91 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider('slider-pro-01');
   initSlider('slider-pro-02');
 
+  // --- 8. Floating Particles Background ---
+  const canvas = document.getElementById('canvas-particles');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+    const isMobile = window.innerWidth < 768;
+    const maxParticles = isMobile ? 35 : 80;
+
+    // Resize canvas
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    // Particle class
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() * 0.3 - 0.15);
+        this.speedY = (Math.random() * 0.3 - 0.15);
+        this.color = Math.random() > 0.5 ? 'rgba(0, 242, 254, 0.20)' : 'rgba(157, 78, 221, 0.20)';
+      }
+
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+        if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
+      }
+
+      draw() {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    // Initialize particle array
+    function initParticles() {
+      particlesArray = [];
+      for (let i = 0; i < maxParticles; i++) {
+        particlesArray.push(new Particle());
+      }
+    }
+    initParticles();
+
+    // Connect particles
+    function connect() {
+      const maxDistance = 110;
+      for (let a = 0; a < particlesArray.length; a++) {
+        for (let b = a + 1; b < particlesArray.length; b++) {
+          const dx = particlesArray[a].x - particlesArray[b].x;
+          const dy = particlesArray[a].y - particlesArray[b].y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (distance < maxDistance) {
+            const opacity = (1 - (distance / maxDistance)) * 0.10;
+            ctx.strokeStyle = `rgba(0, 242, 254, ${opacity})`;
+            ctx.lineWidth = 0.5;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    // Animation Loop
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+        particlesArray[i].draw();
+      }
+      connect();
+      requestAnimationFrame(animate);
+    }
+    animate();
+  }
+
 });
