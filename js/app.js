@@ -176,34 +176,33 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Prepare request body
-      const formData = new URLSearchParams();
-      formData.append('contactName', contactName);
-      formData.append('contactEmail', contactEmail);
-      formData.append('contactSubject', contactSubject);
-      formData.append('contactMessage', contactMessage);
-
-      // Perform Fetch Request to sendEmail.php
-      fetch('inc/sendEmail.php', {
+      // Perform Fetch Request to FormSubmit.co AJAX API
+      fetch('https://formsubmit.co/ajax/farraskantor@gmail.com', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: formData.toString()
+        body: JSON.stringify({
+          name: contactName,
+          email: contactEmail,
+          _subject: contactSubject || 'Portfolio Contact Submission',
+          message: contactMessage
+        })
       })
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        return response.text();
+        return response.json();
       })
       .then(data => {
         loader.style.display = 'none';
-        if (data.trim() === 'OK') {
+        if (data.success === 'true' || data.success === true) {
           contactForm.style.display = 'none';
           succMessage.style.display = 'block';
         } else {
-          showError(data || 'Failed to send message. Please try again.');
+          showError(data.message || 'Failed to send message. Please try again.');
         }
       })
       .catch(error => {
