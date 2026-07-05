@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- 1. Typing Effect for Header ---
   const typedTextSpan = document.getElementById('typed-text');
   const textArray = [
-    'a Software Developer. ',
-    'a Computer Science Graduate. ',
-    'an AR & ML Enthusiast. '
+    'an IT QA Engineer. ',
+    'a QA Automation Enthusiast. ',
+    'a Digital Banking Tester. '
   ];
   const typingSpeed = 100;
   const erasingSpeed = 50;

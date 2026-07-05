@@ -194,14 +194,14 @@ ul#nav li.current a::after {
 /* Header / Banner */
 header#home {
   height: 100vh;
-  min-height: 600px;
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
   text-align: center;
-  padding: 0 20px;
+  padding: 90px 20px 40px;
 }
 
 .banner-content {
