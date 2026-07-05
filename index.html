@@ -1,852 +1,546 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Farras Syam Aly</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-   <link
-   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-   crossorigin="anonymous"
- />
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=NamaFont">
-
- <link rel="preconnect" href="https://fonts.googleapis.com" />
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
- <link
-   href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
-   rel="stylesheet"
- />
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-   <script src="js/magnific-popup.js"></script>
-	<script src="js/find-your-element.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
-   
-   
+  <meta charset="utf-8">
+  <title>Farras Syam Aly - Portfolio</title>
+  <meta name="description" content="Professional software developer portfolio of Farras Syam Aly. Graduated from Gunadarma University in Bachelor of Informatics.">
+  <meta name="author" content="Farras Syam Aly">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/index.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+  <!-- Navigation Bar -->
+  <header id="nav-wrap">
+    <div class="nav-container">
+      <a href="#home" class="logo-nav">FSA</a>
+      <ul id="nav">
+        <li class="current"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Education</a></li>
-            <li><a class="smoothscroll" href="#experience">Experience</a></li>
-            <li><a class="smoothscroll" href="#projects">Projects</a></li>
-            <li><a class="smoothscroll" href="#skill">Skills</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-         
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Farras Syam Aly.</h1>
-           
-            <div class="banner-img">
-               <h2 class="rotate-in-center">
-                  <img id="logofsa" src="images/logofsa.png" alt="Logo FSA">
-               </h2>
-            </div>
-            
-            
-            <div class="two columns">
-
-               
-   
-            </div>
-            <h3>
-               <span id="typed-text"></span>Let's start scrolling</span></a> and learn more <a class="smoothscroll" href="#about" id="about-link">about me</a>.</h3>
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.linkedin.com/in/farrassyam/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://youtube.com/@farrassyam?si=aJ1Z6gY238eJybfR"><i class="fa fa-youtube"></i></a></li> 
-               <li><a href="https://www.instagram.com/farras.syam/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-         </div>
+  <!-- Hero / Banner Section -->
+  <section id="home">
+    <div class="banner-content reveal">
+      <div class="banner-logo-container">
+        <img id="logofsa" src="images/logofsa.png" alt="Logo FSA">
       </div>
+      <h1>I'm Farras Syam Aly</h1>
+      <h3>
+        I am <span id="typed-text"></span><br>
+        Let's start scrolling to learn more <a href="#about">about me</a>.
+      </h3>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/farrassyam/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://youtube.com/@farrassyam?si=aJ1Z6gY238eJybfR" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/farras.syam/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    
+    <div class="scrolldown">
+      <a href="#about"><i class="fa fa-chevron-down"></i></a>
+    </div>
+  </section>
 
-     
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="aboutme row">
-
-         <div class="three columns animate-on-scroll">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2 class="animate-on-scroll">About Me</h2>
-
-
-            <p> My name is Farras Syam Aly, 
-               and I am a software developer who recently graduated from 
-               Gunadarma University with a Bachelor's degree in Informatics.
-                During my time at university, I was highly enthusiastic about developing various technology projects spanning different
-                 fields. Some of my interesting experiences include creating an augmented reality application about the solar system for
-                  Android, developing a machine learning model for banana ripeness classification, and creating a simple game using 3D 
-                  Blender software. These experiences have broadened my insights into the world of technology, 
-                  and I am very eager to continue my career in the field of information technology and contribute to innovative projects.
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Farras Syam Aly</span><br>
-						   <span>Jl.Pertengahan Gang Salam 1<br>
-						         Cijantung, Pasar Rebo, Jakarta Timur
-                     </span><br>
-						   <span>(+62) 856-1033-690</span><br>
-                     <span>farrassyam@gmail.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                 
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
+  <!-- About Section -->
+  <section id="about">
+    <div class="container reveal">
+      <h2 class="section-title">About Me</h2>
       
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row">
-
-         <div class='air air1'></div>
-         <div class='air air2'></div>
-         <div class='air air3'></div>
-         <div class='air air4'></div>
-
-         <div class="three columns header-col">
-            <h1 class="ml14">
-               <span class="text-wrapper">
-                 <span class="letters">Education</span>
-                 <span class="line"></span>
-               </span>
-             </h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="education-1 row item">
-
-               <div class="twelve columns">
-
-                  <h3>106 Senior High School</h3>
-                  <p class="info">Major Science<span>&bull;</span> <em class="date">2016 - 2019</em></p>             
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="education-2 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Gunadarma University </h3>
-                  <p class="info">Bachelor degree in Computer Science<span>&bull;</span> <em class="date">2019 - 2023</em></p>
-              
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-   </section> <!-- About Section End-->
-
-   <!-- Experience Section
-   ================================================== -->
-   <section id="experience">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-                  <span class="text-experience">
-               <h1><span>Experience</span></h1>
-            </span>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="experience-1 row item">
-
-               <div class="twelve columns">
-                  <h3>Reseller</h3>
-                  <p class="info">Freelance <span>&bull;</span> <em class="date">November 2020 - May 2021</em></p>
-
-                  
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="experience-2 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Airdropers</h3>
-                  <p class="info">Freelance <span>&bull;</span> <em class="date">May 2021 - December 2021</em></p>
-
-              
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="experience-3 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Driver</h3>
-                  <p class="info">Freelance<span>&bull;</span> <em class="date">May 2022 - February 2023</em></p>
-
-              
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="experience-4 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Freelance Editor</h3>
-                  <p class="info">Freelance<span>&bull;</span> <em class="date">May 2023 - Present</em></p>
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End experience -->
-      </section> <!-- experience Section End-->
-
-      <!-- Projects
-      ----------------------------------------------- -->
-      <section id="projects">
-
-      <div class="row projects">
-
-         <div class="three columns header-col">
-            <span class="projects0"></span>
-            <h1><span>Projects</span></h1>
-         </div>
-
-         <div class="projectsemua">
-         <div class="nine columns main-col">
-
-            <div class="projects1 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Klasifikasi Tingkat Kematangan Buah Pisang</h3>
-                  <p class="info"> <em class="date">February 2023 - August 2023</em></p>
-
-                  <p class="info"> <em class="info2">Model Machine Learning tentang klasifikasi tingkat kematangan pada buah pisang menggunakan algoritma CNN.</em></p>
-
-   
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="projects2 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Aplikasi Pemesanan Tempe Gedong Menggunakan Netbeans</h3>
-                  <p class="info"><em class="date">January 2023 - January 2023</em></p>
-
-                  <p class="info"> <em class="info2"> Aplikasi sederhana input data pemesanan tempe menggunakan netbeans dengan framework hibernate.</em></p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="projects3 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Farras Syam Inventory</h3>
-                  <p class="info"><em class="date">August 2022 - December 2022</em></p>
-
-                  <p class="info"><em class="info2">
-                  Aplikasi inventaris sederhana berbasis website.</em>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-            <div class="projects4 row item">
-
-               <div class="twelve columns">
-
-                  <h3>Tata Surya AR</h3>
-                  <p class="info"><em class="date">July 2022 - August 2022</em></p>
-                 
-                  <p class="info"><em class="info2">
-                   Aplikasi augmented reality (AR) tentang tata surya berbasis android.</em>
-                  </p>
-                  
-               
-                  
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
+      <div class="aboutme-layout">
+        <div class="profile-pic-container">
+          <div class="profile-pic-frame">
+            <img class="profile-pic" src="images/profilepic.jpg" alt="Farras Syam Aly">
+          </div>
+        </div>
+        
+        <div class="aboutme-info">
+          <p>
+            My name is Farras Syam Aly, and I am a software developer who recently graduated from Gunadarma University with a Bachelor's degree in Informatics. During my time at university, I was highly enthusiastic about developing various technology projects spanning different fields. Some of my interesting experiences include creating an augmented reality application about the solar system for Android, developing a machine learning model for banana ripeness classification, and creating a simple game using 3D Blender software. These experiences have broadened my insights into the world of technology, and I am very eager to continue my career in the field of information technology and contribute to innovative projects.
+          </p>
+          
+          <div class="contact-details-grid">
+            <div class="contact-item">
+              <h4>Full Name</h4>
+              <p>Farras Syam Aly</p>
+            </div>
+            <div class="contact-item">
+              <h4>Location</h4>
+              <p>Jl.Pertengahan Gang Salam 1, Cijantung, Pasar Rebo, Jakarta Timur</p>
+            </div>
+            <div class="contact-item">
+              <h4>Phone</h4>
+              <p>(+62) 856-1033-690</p>
+            </div>
+            <div class="contact-item">
+              <h4>Email</h4>
+              <p>farrassyam@gmail.com</p>
+            </div>
+          </div>
+        </div>
       </div>
-      </div> <!-- End Projects -->
-</section>
+    </div>
+  </section>
 
-      <!-- Skills
-      ----------------------------------------------- -->
-      <section id="skill">
-      <div class="row skill">
+  <!-- Education Section -->
+  <section id="resume">
+    <div class="container reveal">
+      <div class="section-grid">
+        <div class="section-label">
+          Education
+          <span>Academic Background</span>
+        </div>
+        
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Gunadarma University</h3>
+              <span class="timeline-date">2019 - 2023</span>
+            </div>
+            <p class="timeline-info">Bachelor degree in Computer Science</p>
+            <p class="timeline-desc">Focused on software engineering, database design, computer networks, and algorithms. Successfully built machine learning models and augmented reality projects for undergraduate thesis.</p>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>106 Senior High School</h3>
+              <span class="timeline-date">2016 - 2019</span>
+            </div>
+            <p class="timeline-info">Major Science</p>
+            <p class="timeline-desc">Obtained a strong foundation in logic, mathematics, and natural science studies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-         <div class="textskill three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container reveal">
+      <div class="section-grid">
+        <div class="section-label">
+          Experience
+          <span>Work & Freelance History</span>
+        </div>
+        
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Freelance Editor</h3>
+              <span class="timeline-date">May 2023 - Present</span>
+            </div>
+            <p class="timeline-info">Freelance</p>
+            <p class="timeline-desc">Responsible for editing, formatting, and refining video content or articles. Ensuring layout alignments, audio syncing, and visual quality conform to standard client requirements.</p>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Driver</h3>
+              <span class="timeline-date">May 2022 - February 2023</span>
+            </div>
+            <p class="timeline-info">Freelance</p>
+            <p class="timeline-desc">Provided transportation services ensuring safe navigation, timely arrivals, and excellent client communication.</p>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Airdropers</h3>
+              <span class="timeline-date">May 2021 - December 2021</span>
+            </div>
+            <p class="timeline-info">Freelance</p>
+            <p class="timeline-desc">Participated in cryptocurrency testing environments, executed airdrop campaigns, and researched emerging Web3 technologies.</p>
+          </div>
 
-         <div class="nine columns main-col">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Reseller</h3>
+              <span class="timeline-date">November 2020 - May 2021</span>
+            </div>
+            <p class="timeline-info">Freelance</p>
+            <p class="timeline-desc">Managed supply chains, coordinated customer inquiries, and optimized digital marketing platforms for sales operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <p>
-            </p>
-
-				<div class="gambar bars">
-
-               <ul id="skills" class="skill">					   
-                  <li><span class="bar-expand sql"></span><img class="skill-image" src="images/logo-skill/sql.png" alt="Logo SQL"><em>SQL</em></li> 
-                  <li><span class="bar-expand photoshop"></span><img class="skill-image" src="images/logo-skill/photoshop.png" alt="Logo PHOTOSHOP"><em>Photoshop</em></li>
-						<li><span class="bar-expand picsart"></span><img class="skill-image" src="images/logo-skill/picsart.png" alt="Logo PICSART"><em>Picsart</em></li>
-						<li><span class="bar-expand ml"></span><img class="skill-image" src="images/logo-skill/machine.png" alt="Logo ML"><em>Machine Learning</em></li>
-						<li><span class="bar-expand html5"></span><img class="skill-image" src="images/logo-skill/html.png" alt="Logo HTML"><em>HTML5</em></li>
-                  <li><span class="bar-expand python"></span><img class="skill-image" src="images/logo-skill/python.png" alt="Logo PYTHON"><em>Python</em></li>
-                  <li><span class="bar-expand css"></span><img class="skill-image" src="images/logo-skill/css.png" alt="Logo CSS"><em>CSS</em></li>
-                  <li><span class="bar-expand xampp"></span><img class="skill-image" src="images/logo-skill/xampp.png" alt="Logo XAMPP"><em>Xampp</em></li>
-                  <li><span class="bar-expand msoffice"></span><img class="skill-image" src="images/logo-skill/ms-office.png" alt="Logo MSOFFICE"><em>Ms Office</em></li>
-                  <li><span class="bar-expand kaggle"></span><img class="skill-image" src="images/logo-skill/kaggle.png" alt="Logo KAGGLE"><em>Kaggle</em></li>
-                  <li><span class="bar-expand blender"></span><img class="skill-image" src="images/logo-skill/blender.png" alt="Logo BLENDER"><em>3D blender</em></li>
-                  <li><span class="bar-expand java"></span><img class="skill-image" src="images/logo-skill/java.png" alt="Logo JAVA"><em>Java</em></li>
-                  <li><span class="bar-expand unity"></span><img class="skill-image" src="images/logo-skill/unity.png" alt="Logo UNITY"><em>Unity</em></li>
-                  <li><span class="bar-expand c#"></span><img class="skill-image" src="images/logo-skill/c-sharp.png" alt="Logo C#"><em id="sisarp">C#</em></li>
-               </ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-      </section> <!-- Resume Section End-->
-
-
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container reveal">
+      <h2 class="section-title">Featured Projects</h2>
       
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="CheckOut row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Projects.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/coffee.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Farras Syam Inventory</h5>
-                              <p>Website Inventory</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/console.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Banana Ripeness Classification</h5>
-                              <p>Machine Learning</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/judah.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Tempe Gedong</h5>
-                              <p>Java Application</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/into-the-light.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Tata Surya AR</h5>
-                              <p>Augmented Reality</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-</div>
-
- 
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Farras Syam Inventory</h4>
-			      <p>Aplikasi Inventaris Sederhana Berbasis Website </p>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/portfolio/coffee.jpg" alt="Farras Syam Inventory">
+            <div class="project-overlay">
+              <button class="project-btn" data-modal="modal-01">View Details</button>
             </div>
+          </div>
+          <div class="project-meta">
+            <h3>Farras Syam Inventory</h3>
+            <p>Website Inventory</p>
+          </div>
+        </div>
 
-	      </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Tingkat Kematangan Buah Pisang</h4>
-			      <p>Model Machine Learning Klasifikasi Tingkat Kematangan Buah Pisang Menggunakan Algoritma CNN/p>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/portfolio/console.jpg" alt="Banana Ripeness Classification">
+            <div class="project-overlay">
+              <button class="project-btn" data-modal="modal-02">View Details</button>
             </div>
+          </div>
+          <div class="project-meta">
+            <h3>Banana Ripeness</h3>
+            <p>Machine Learning</p>
+          </div>
+        </div>
 
-	      </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Tempe Gedong</h4>
-			      <p>Aplikasi Pemesanan Sederhana Menggunakan Java </p>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/portfolio/judah.jpg" alt="Tempe Gedong Java App">
+            <div class="project-overlay">
+              <button class="project-btn" data-modal="modal-03">View Details</button>
             </div>
+          </div>
+          <div class="project-meta">
+            <h3>Tempe Gedong</h3>
+            <p>Java Application</p>
+          </div>
+        </div>
 
-	      </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Tata Surya AR</h4>
-			      <p>Aplikasi Augmented Reality Tentang Tata Surya Berbasis Android</p>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/portfolio/into-the-light.jpg" alt="Tata Surya AR">
+            <div class="project-overlay">
+              <button class="project-btn" data-modal="modal-04">View Details</button>
             </div>
-
-	      </div><!-- modal-04 End -->
-
-
-         <div class="three columns action">
-
-
-
-         </div>
-
+          </div>
+          <div class="project-meta">
+            <h3>Tata Surya AR</h3>
+            <p>Augmented Reality</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-   </section> <!-- Call-To-Action Section End-->
+  <!-- Skills Section -->
+  <section id="skill">
+    <div class="container reveal">
+      <div class="section-grid">
+        <div class="section-label">
+          Skills
+          <span>Tech Stack & Tools</span>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="images/logo-skill/sql.png" alt="SQL">
+            <em>SQL</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/photoshop.png" alt="Photoshop">
+            <em>Photoshop</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/picsart.png" alt="Picsart">
+            <em>Picsart</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/machine.png" alt="Machine Learning">
+            <em>Machine Learning</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/html.png" alt="HTML5">
+            <em>HTML5</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/python.png" alt="Python">
+            <em>Python</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/css.png" alt="CSS3">
+            <em>CSS3</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/xampp.png" alt="Xampp">
+            <em>XAMPP</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/ms-office.png" alt="Ms Office">
+            <em>Ms Office</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/kaggle.png" alt="Kaggle">
+            <em>Kaggle</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/blender.png" alt="3D Blender">
+            <em>3D Blender</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/java.png" alt="Java">
+            <em>Java</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/unity.png" alt="Unity">
+            <em>Unity</em>
+          </div>
+          <div class="skill-card">
+            <img src="images/logo-skill/c-sharp.png" alt="C#">
+            <em>C#</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   <!-- Awards Section
-   ================================================== -->
-   <section id="awards">
+  <!-- Awards Section -->
+  <section id="awards">
+    <div class="container reveal">
+      <h2 class="section-title">Awards & Achievements</h2>
+      
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_1.jpeg" alt="Futsal Trophy">
+          </div>
+          <div class="award-meta">
+            <h5>Full Trophy</h5>
+            <p>Futsal</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_2.jpeg" alt="ItsSociart Fest 2022 Futsal">
+          </div>
+          <div class="award-meta">
+            <h5>Juara 1 - ItsSociart Fest 2022</h5>
+            <p>Futsal</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_3.jpeg" alt="Himti Cup 2023 Futsal">
+          </div>
+          <div class="award-meta">
+            <h5>Juara 1 - Himti Cup 2023</h5>
+            <p>Futsal</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_4.jpeg" alt="ItsSociart Fest 2023 Futsal">
+          </div>
+          <div class="award-meta">
+            <h5>Juara 2 - ItsSociart Fest 2023</h5>
+            <p>Futsal</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_5.jpeg" alt="WTG Competition 2016 Futsal">
+          </div>
+          <div class="award-meta">
+            <h5>Juara 1 - WTG Competition 2016</h5>
+            <p>Futsal</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_6.jpeg" alt="Banker's Cup 2017 Futsal">
+          </div>
+          <div class="award-meta">
+            <h5>Juara 3 - Banker's Cup 2017</h5>
+            <p>Futsal</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_7.jpeg" alt="ItsSociart Fest 2021 PES">
+          </div>
+          <div class="award-meta">
+            <h5>Juara 3 - ItsSociart Fest 2021</h5>
+            <p>PES [Game]</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-image">
+            <img src="images/awards/awards_8.jpeg" alt="Himti Cup 2023 PES">
+          </div>
+          <div class="award-meta">
+            <h5>Juara 1 - Himti Cup 2023</h5>
+            <p>PES [Game]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="JuaraMenang row">
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container reveal">
+      <h2 class="section-title">Contact</h2>
+      
+      <div class="contact-layout">
+        <div class="contact-form-container">
+          <h4>Leave a Response</h4>
+          <form action="" method="post" id="contactForm" name="contactForm">
+            <div>
+              <label for="contactName">Name <span class="required">*</span></label>
+              <input type="text" id="contactName" name="contactName" required>
+            </div>
 
-         <div class="twelve columns collapsed">
+            <div>
+              <label for="contactEmail">Email <span class="required">*</span></label>
+              <input type="text" id="contactEmail" name="contactEmail" required>
+            </div>
 
-            <h1>Awards</h1>
+            <div>
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="contactSubject">
+            </div>
 
-            <!-- awards-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div>
+              <label for="contactMessage">Message <span class="required">*</span></label>
+              <textarea cols="50" rows="10" id="contactMessage" name="contactMessage" required></textarea>
+            </div>
 
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
+            <div>
+              <button class="submit" type="submit">Submit</button>
+              <span id="image-loader">
+                <img alt="Sending..." src="images/loader.gif">
+              </span>
+            </div>
+          </form>
 
-                     <a>
-                        <img alt="" src="images/awards/awards_1.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Full Trophy</h5>
-                              <p>Futsal</p>
-          					   </div>
-                        </div>
+          <div id="message-warning">Error sending message.</div>
+          <div id="message-success">
+            <i class="fa fa-check"></i> Your message was sent, thank you!<br>
+          </div>
+        </div>
 
-                     </a>
+        <aside class="widget_contact">
+          <h4>Address and Phone</h4>
+          <p class="address">
+            Farras Syam Aly<br>
+            Jl.Pertengahan Gang Salam 1<br>
+            Cijantung, Pasar Rebo, Jakarta Timur<br>
+            <span>(+62) 856-1033-690</span>
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-                  </div>
-          		</div> <!-- item end -->
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/farrassyam/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://youtube.com/@farrassyam?si=aJ1Z6gY238eJybfR" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/farras.syam/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+      </ul>
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
+      <ul class="copyright">
+        <li>&copy; Copyright 2026 Farras Syam Aly</li>
+      </ul>
+    </div>
+    
+    <div id="go-top">
+      <a title="Back to Top" href="#home"><i class="fa fa-chevron-up"></i></a>
+    </div>
+  </footer>
 
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/awards/awards_2.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Juara 1 - ItsSociart Fest 2022</h5>
-                              <p>Futsal</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/awards/awards_3.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Juara 1 - Himti Cup 2023</h5>
-                              <p>Futsal</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/awards/awards_4.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Juara 2 - ItsSociart Fest 2023</h5>
-                              <p>Futsal</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/awards/awards_5.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Juara 1 - WTG Competition 2016</h5>
-                              <p>Futsal</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/awards/awards_6.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Juara 3 - Banker's Cup 2017</h5>
-                              <p>Futsal</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/awards/awards_7.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Juara 3 - ItsSociart Fest 2021</h5>
-                              <p>PES [Game]</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/awards/awards_8.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Juara 1 - Himti Cup 2023</h5>
-                              <p>PES [Game]</p>
-          					   </div>
-                        </div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
- 
-      </div> <!-- row End -->
-   </div>
-</div>
-
-   </section> <!-- Portfolio Section End-->
-
-         
-
-
-
+  <!-- Native Modals / Dialog Elements -->
   
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="ten columns">
-<p></p>
-               <h4>Leave a Response</h4>
-
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p class="address">
-						 						   Farras Syam Aly<br>
-						   Jl.Pertengahan Gang Salam 1<br>
-						   Cijantung, Pasar Rebo, Jakarta Timur<br>
-						   <span>(+62) 856-1033-690</span>
-					   </p>
-
-				   </div>
-
-
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-         
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-
-               <li><a href="https://www.linkedin.com/in/farrassyam/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://youtube.com/@farrassyam?si=aJ1Z6gY238eJybfR"><i class="fa fa-youtube"></i></a></li> 
-               <li><a href="https://www.instagram.com/farras.syam/"><i class="fa fa-instagram"></i></a></li>
-
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2023</li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+  <!-- Project 1 Dialog -->
+  <dialog id="modal-01" class="popup-modal">
+    <div class="modal-content">
+      <div class="modal-image-container">
+        <img src="images/portfolio/modals/m-coffee.jpg" alt="Farras Syam Inventory">
       </div>
+      <div class="modal-body">
+        <h4>Farras Syam Inventory</h4>
+        <p>Aplikasi Inventaris Sederhana Berbasis Website.</p>
+        <div class="modal-footer">
+          <button class="modal-close-btn popup-modal-dismiss">Close</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
-   </footer> <!-- Footer End-->
+  <!-- Project 2 Dialog -->
+  <dialog id="modal-02" class="popup-modal">
+    <div class="modal-content">
+      <div class="modal-image-container">
+        <img src="images/portfolio/modals/m-console.jpg" alt="Banana Ripeness Classification">
+      </div>
+      <div class="modal-body">
+        <h4>Banana Ripeness Classification</h4>
+        <p>Model Machine Learning Klasifikasi Tingkat Kematangan Buah Pisang Menggunakan Algoritma CNN.</p>
+        <div class="modal-footer">
+          <button class="modal-close-btn popup-modal-dismiss">Close</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-   
-   <!-- Scripts -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Project 3 Dialog -->
+  <dialog id="modal-03" class="popup-modal">
+    <div class="modal-content">
+      <div class="modal-image-container">
+        <img src="images/portfolio/modals/m-judah.jpg" alt="Tempe Gedong Java App">
+      </div>
+      <div class="modal-body">
+        <h4>Tempe Gedong</h4>
+        <p>Aplikasi Pemesanan Sederhana Menggunakan Java.</p>
+        <div class="modal-footer">
+          <button class="modal-close-btn popup-modal-dismiss">Close</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-   <script src="index.js"></script>
+  <!-- Project 4 Dialog -->
+  <dialog id="modal-04" class="popup-modal">
+    <div class="modal-content">
+      <div class="modal-image-container">
+        <img src="images/portfolio/modals/m-intothelight.jpg" alt="Tata Surya AR">
+      </div>
+      <div class="modal-body">
+        <h4>Tata Surya AR</h4>
+        <p>Aplikasi Augmented Reality Tentang Tata Surya Berbasis Android.</p>
+        <div class="modal-footer">
+          <button class="modal-close-btn popup-modal-dismiss">Close</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
-   
+  <!-- JavaScript file -->
+  <script src="js/app.js"></script>
 
-
-   </body>
-
+</body>
 </html>
