@@ -193,20 +193,24 @@ ul#nav li.current a::after {
 
 /* Header / Banner */
 header#home {
-  height: 100vh;
-  min-height: 650px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
-  padding: 90px 20px 40px;
+  padding: 90px 30px 60px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .banner-content {
   max-width: 800px;
+  width: 100%;
   z-index: 10;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .banner-logo-container {
