@@ -256,5 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   initSlider('slider-pro-01');
+  initSlider('slider-pro-02');
 
 });
