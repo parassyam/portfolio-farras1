@@ -197,8 +197,8 @@ ul#nav li.current a::after {
   display: none;
 }
 
-/* Header / Banner */
-header#home {
+/* Hero / Banner Section */
+section#home {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -241,7 +241,7 @@ header#home {
   }
 }
 
-header h1 {
+section#home h1 {
   font-family: var(--font-cyber);
   font-size: 4rem;
   font-weight: 900;
@@ -253,7 +253,7 @@ header h1 {
   -webkit-text-fill-color: transparent;
 }
 
-header h3 {
+section#home h3 {
   font-size: 1.25rem;
   font-weight: 300;
   color: var(--text-muted);
@@ -261,7 +261,7 @@ header h3 {
   letter-spacing: 0.5px;
 }
 
-header h3 a {
+section#home h3 a {
   color: var(--primary-neon);
   text-decoration: none;
   font-weight: 500;
@@ -269,7 +269,7 @@ header h3 a {
   transition: var(--transition);
 }
 
-header h3 a::after {
+section#home h3 a::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -280,11 +280,11 @@ header h3 a::after {
   transition: var(--transition);
 }
 
-header h3 a:hover {
+section#home h3 a:hover {
   text-shadow: 0 0 8px var(--primary-neon);
 }
 
-header h3 a:hover::after {
+section#home h3 a:hover::after {
   background-color: var(--secondary-neon);
   box-shadow: 0 0 5px var(--secondary-neon);
 }
