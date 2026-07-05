@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedTextSpan = document.getElementById('typed-text');
   const textArray = [
     'an IT QA Engineer. ',
-    'a QA Automation Enthusiast. ',
-    'a Digital Banking Tester. '
+    'a QA Automation Engineer. ',
+    'a Digital Banking Tester. ',
+    'a System Architecture Enthusiast. '
   ];
   const typingSpeed = 100;
   const erasingSpeed = 50;
